@@ -24,7 +24,7 @@ def sum_factorial():
 
     result=sum(final_list)    
 
-    print("Final SUM = {}".format(result)) 
+    print("Final SUM is {}".format(result)) 
 
     return result
 

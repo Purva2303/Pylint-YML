@@ -6,28 +6,28 @@ on:
 
     paths: 
 
-    - 'Pylint-YML/Pylint/factorial.py' 
+    - 'factorial.py' 
 
-    - 'Pylint-YML/Pylint/lint.py' 
+    - 'lint.py' 
  
 
  jobs: 
 
   build: 
 
-    runs-on: windows-latest 
+    runs-on: ubuntu-latest 
 
     steps: 
 
     - uses: actions/checkout@v2 
 
-    - name: Set up Python 3.9.9
+    - name: Set up Python 3.8 
 
-      uses: actions/setup-go@v2.1.5 
+      uses: actions/setup-python@v2 
 
       with: 
 
-        python-version: 3.9.9
+        python-version: 3.8 
 
     - name: Install dependencies 
 

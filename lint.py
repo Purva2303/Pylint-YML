@@ -6,7 +6,7 @@ from pylint import lint
 
 THRESHOLD = 9  
 
-run = lint.Run(["factorial.py"], do_exit=False) 
+run = lint.Run(["test.py"], do_exit=False) 
 
 score = run.linter.stats["global_note"]  
 
